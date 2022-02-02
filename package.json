@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "cypress:open": "cypress open",
+    "start": "json-server -p 3000 --watch db.json --routes routes.json",
+    "dev": "start-test 3000 cypress:open"
+  },
+  "devDependencies": {
+    "@types/json-server": "0.14.4",
+    "@types/mocha": "^9.1.0",
+    "cypress": "^9.4.1",
+    "prettier": "^2.5.1",
+    "start-server-and-test": "^1.14.0",
+    "typescript": "^4.5.5"
+  }
+}

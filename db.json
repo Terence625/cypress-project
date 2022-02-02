@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "test",
+      "author": "test"
+    },
+    {
+      "id": 2,
+      "name": "test",
+      "value": "test"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "test": {
+    "name": "test"
+  }
+}
