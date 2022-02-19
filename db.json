@@ -1,27 +1,24 @@
 {
-  "posts": [
+  "todos": [
     {
-      "id": 1,
-      "title": "test",
-      "author": "test"
+      "title": "eqweqw",
+      "completed": false,
+      "id": "5190636735"
     },
     {
-      "id": 2,
-      "name": "test",
-      "value": "test"
-    }
-  ],
-  "comments": [
+      "title": "dasdas",
+      "completed": false,
+      "id": "8076986682"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "dasdas",
+      "completed": false,
+      "id": "3199526200"
+    },
+    {
+      "title": "ugiuh",
+      "completed": false,
+      "id": "9795242965"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "test": {
-    "name": "test"
-  }
+  ]
 }
