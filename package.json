@@ -5,6 +5,8 @@
     "dev": "start-test 3000 cypress:open"
   },
   "devDependencies": {
+    "@cypress/react": "^5.12.3",
+    "@cypress/webpack-dev-server": "^1.8.1",
     "@types/json-server": "0.14.4",
     "@types/mocha": "^9.1.0",
     "@types/react": "^17.0.39",
