@@ -6,3 +6,4 @@ import Toggle from "./component/Toggle";
 // ========================================
 
 ReactDOM.render(<Toggle />, document.getElementById("root"));
+
