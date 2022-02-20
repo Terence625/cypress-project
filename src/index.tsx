@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Toggle from "./component/Toggle";
+import Input from "./component/Input";
 
 // ========================================
 
-ReactDOM.render(<Toggle />, document.getElementById("root"));
+ReactDOM.render(<Input />, document.getElementById("root"));
 
