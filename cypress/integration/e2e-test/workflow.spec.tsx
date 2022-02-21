@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import Display from "../../../src/component/Display";
 import Input from "../../../src/component/Input";
 
-describe("workflow", () => {
-  it("should render", () => {
+describe("workflow", function () {
+  it("should render", function () {
     cy.document().then((doc) => {
       const inputDiv = doc.createElement("div");
       const displayDiv = doc.createElement("div");
@@ -12,12 +12,17 @@ describe("workflow", () => {
       inputDiv.setAttribute("class", "input");
       displayDiv.setAttribute("class", "display");
       ReactDOM.render(<Input element={doc} />, inputDiv);
-      ReactDOM.render(<Display />, displayDiv);
+
       replacedDiv.replaceWith(inputDiv);
       doc.addEventListener("inputClick", cy.stub().as("inputClick"));
-      cy.get("@inputClick")
+      cy.get("@inputClick", { timeout: 1e6 })
         .should("be.called")
-        .then(() => doc.body.appendChild(displayDiv));
+        .its("firstCall.args.0.detail")
+        .then((detail) => {
+          ReactDOM.render(<Display value={detail}/>, displayDiv);
+          doc.body.appendChild(displayDiv);
+          cy.log(detail);
+        });
     });
   });
 });

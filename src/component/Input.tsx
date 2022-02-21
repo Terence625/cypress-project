@@ -8,7 +8,9 @@ export default function Input(props: IInputProps) {
   const [input, setInput] = useState("");
 
   const handleInput = () => {
-    const myEvent = new CustomEvent("inputClick");
+    const myEvent = new CustomEvent("inputClick", {
+      detail: input,
+    });
     props.element.dispatchEvent(myEvent);
   };
 
